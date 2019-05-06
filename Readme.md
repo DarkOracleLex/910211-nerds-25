@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Алексей Кузнецов](https://up.htmlacademy.ru/htmlcss/25/user/910211).
-* Наставник: [Николай Маркелов] (https://up.htmlacademy.ru/htmlcss/25/user/235291).
+* Наставник: [Николай Маркелов](https://up.htmlacademy.ru/htmlcss/25/user/235291).
 
 ---
 
