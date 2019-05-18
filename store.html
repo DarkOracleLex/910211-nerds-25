@@ -23,7 +23,78 @@
         <h1>Магазин готовых шаблонов</h1>
     </header>
     <main>
-        <!-- Здесь будет форма -->
+        <section class="filters">
+            <h2 class="visually-hidden">Фильтр товаров</h2>
+            <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                <fieldset>
+                    <legend>Сетка</legend>
+                    <ul>
+                        <li class="filter-option">
+                            <label>
+                                <input class="filter-input filter-input-radio" 
+                                type="radio" name="grid-option" value="adaptive">
+                                Адаптивная
+                            </label>
+                        </li>
+                        <li class="filter-option">
+                            <label>
+                                <input class="filter-input filter-input-radio" 
+                                type="radio" name="grid-option" value="fixed">
+                                Фиксированная
+                            </label>
+                        </li>
+                        <li class="filter-option">
+                            <label>
+                                <input class="filter-input filter-input-radio" 
+                                type="radio" name="grid-option" value="rubber">
+                                Резиновая
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Особенности</legend>
+                    <ul>
+                        <li>
+                            <label>
+                                <input class="filter-input filter-input-checkbox" 
+                                type="checkbox" name="features-option" value="slider">
+                                Слайдер
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input class="filter-input filter-input-checkbox" 
+                                type="checkbox" name="features-option" value="advantage block">
+                                Блок преимуществ
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input class="filter-input filter-input-checkbox" 
+                                type="checkbox" name="features-option" value="news">
+                                Новости
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input class="filter-input filter-input-checkbox" 
+                                type="checkbox" name="features-option" value="gallery">
+                                Галерея
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input class="filter-input filter-input-checkbox" 
+                                type="checkbox" name="features-option" value="cart">
+                                Корзина
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button type="submit" class="filter-button button">Показать</button>
+            </form>
+        </section>
         <section class="catalog">
             <h2 class="visually-hidden">Наши шаблоны</h2>
             <ul class="catalog-list">
