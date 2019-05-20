@@ -27,24 +27,25 @@
             <h2 class="visually-hidden">Фильтр товаров</h2>
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                 <fieldset>
-                    <legend>Сетка</legend>
+                    <legend class="visually-hidden">Сетка</legend>
+                    <b class="fieldset-title" aria-hidden="true">Сетка</b>
                     <ul>
                         <li class="filter-option">
-                            <label>
+                            <label class="filter-label">
                                 <input class="filter-input filter-input-radio" 
                                 type="radio" name="grid-option" value="adaptive">
                                 Адаптивная
                             </label>
                         </li>
                         <li class="filter-option">
-                            <label>
+                            <label class="filter-label">
                                 <input class="filter-input filter-input-radio" 
                                 type="radio" name="grid-option" value="fixed">
                                 Фиксированная
                             </label>
                         </li>
                         <li class="filter-option">
-                            <label>
+                            <label class="filter-label">
                                 <input class="filter-input filter-input-radio" 
                                 type="radio" name="grid-option" value="rubber">
                                 Резиновая
@@ -53,38 +54,39 @@
                     </ul>
                 </fieldset>
                 <fieldset>
-                    <legend>Особенности</legend>
+                    <legend class="visually-hidden">Особенности</legend>
+                    <b class="fieldset-title" aria-hidden="true">Особенности</b>
                     <ul>
                         <li>
-                            <label>
+                            <label class="filter-label">
                                 <input class="filter-input filter-input-checkbox" 
                                 type="checkbox" name="features-option" value="slider">
                                 Слайдер
                             </label>
                         </li>
                         <li>
-                            <label>
+                            <label class="filter-label">
                                 <input class="filter-input filter-input-checkbox" 
                                 type="checkbox" name="features-option" value="advantage block">
                                 Блок преимуществ
                             </label>
                         </li>
                         <li>
-                            <label>
+                            <label class="filter-label">
                                 <input class="filter-input filter-input-checkbox" 
                                 type="checkbox" name="features-option" value="news">
                                 Новости
                             </label>
                         </li>
                         <li>
-                            <label>
+                            <label class="filter-label">
                                 <input class="filter-input filter-input-checkbox" 
                                 type="checkbox" name="features-option" value="gallery">
                                 Галерея
                             </label>
                         </li>
                         <li>
-                            <label>
+                            <label class="filter-label">
                                 <input class="filter-input filter-input-checkbox" 
                                 type="checkbox" name="features-option" value="cart">
                                 Корзина
@@ -171,21 +173,21 @@
                 </p>
                 <p>
                     <label>
-                        Ваше e-mail:
-                        <input class="user-e-mail" type="text" name="e-mail" placeholder="email@example.com">
+                        Ваш e-mail:
+                        <input class="user-email" type="text" name="email" placeholder="e-mail@example.com">
                     </label>
                 </p>
                 <p>
                     <textarea class="user-letter" name="letter" cols="30" rows="10">В свободной форме</textarea>
                 </p>
+                <button class="button" type="submit">
+                    Отправить
+                </button>
             </form>
-            <button class="button" type="submit">
-                Отправить
-            </button>
             <button class="modal-close" type="button">
-                Закрыть
+              Закрыть
             </button>
-         </section>
+        </section>
     </main>
     <footer class="main-footer">
         <section class="footer-social">
