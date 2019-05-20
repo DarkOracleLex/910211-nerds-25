@@ -166,26 +166,29 @@
             <h2>Напишите нам</h2>
             <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
                 <p>
-                    <label>
+                    <label class="write-us-label">
                         Ваше имя:
                         <input class="user-name" type="text" name="name" placeholder="Имя Фамилия">
                     </label>
                 </p>
                 <p>
-                    <label>
+                    <label class="write-us-label">
                         Ваш e-mail:
                         <input class="user-email" type="text" name="email" placeholder="e-mail@example.com">
                     </label>
                 </p>
                 <p>
-                    <textarea class="user-letter" name="letter" cols="30" rows="10">В свободной форме</textarea>
+                    <label class="write-us-label">
+                        Текст письма:
+                        <textarea class="user-letter" name="letter" cols="30" rows="10">В свободной форме</textarea>
+                    </label>
                 </p>
                 <button class="write-us-button button" type="submit">
                     Отправить
                 </button>
             </form>
             <button class="modal-close button" type="modal-close-button button">
-              Закрыть
+                Закрыть
             </button>
         </section>
     </main>
