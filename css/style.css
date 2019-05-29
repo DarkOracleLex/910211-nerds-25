@@ -47,19 +47,26 @@ input[type="radio"].visually-hidden {
 
 /* main-navigation */
 
+.navigation-container {
+  width: 1200px;
+  min-height: 135px;
+  
+  margin: 0 auto;
+  padding: 0 20px;
+  
+  box-sizing: border-box;
+}
+
 .main-navigation {
   line-height: 30px;
   font-weight: 500;
   text-transform: uppercase;
-
-  min-height: 135px;
 
   display: flex;
 }
 
 .main-header-logo {
   margin-top: 50px;
-  margin-left: 140px;
   margin-right: 200px;
 }
 
@@ -108,6 +115,79 @@ input[type="radio"].visually-hidden {
 
 /* main-header-slider */
 
+.slider-container {
+  width: 1200px;
+
+  margin: 0 auto;
+  padding: 0 20px;
+  
+  box-sizing: border-box;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+}
+
+.slider-item {
+  display: none;
+}
+
+.slider-item:nth-child(1) {
+  display: block;
+}
+
+.slider-item h3 {
+  max-width: 600px;
+  margin: 0;
+  margin-bottom: 27px;
+  
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.slider-item p {
+  max-width: 430px;
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+.slider-item-button {
+  display: block;
+  width: 240px;
+  padding: 13px 0;
+  
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  
+  background-color: #fb565a;
+  border-radius: 3px;
+  border: none;
+}
+
+.slider-item-button:hover,
+.slider-item-button:focus {
+  background-color: #e74246;
+}
+
+.slider-item-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  
+  background-color: #d7373b;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
+
 /* store-header */
 
 .store-header {
@@ -123,25 +203,31 @@ input[type="radio"].visually-hidden {
 /* main-content */
 
 /* offers index.html */
-.offers-list {
-  display: flex;
-  justify-content: space-between;
 
+.offers-container {
+  width: 1200px;
+
+  margin: 0 auto;
+  padding: 0 20px;
+  
+  box-sizing: border-box;
+}
+
+.offers-list {
   margin: 0;
+  margin-top: 80px;
   padding: 0;
+
+  display: flex;
 }
 
 .offers li {
   list-style: none;
-  margin-top: 80px;
+  padding-right: 100px; 
 }
 
-.offers li:first-child {
-  margin-left: 140px;
-}
-
-.offers li:last-child {
-  margin-right: 140px;
+.offers li:last-of-type {
+  padding-right: 0; 
 }
 
 .offers h3 {
