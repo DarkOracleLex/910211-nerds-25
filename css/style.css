@@ -11,35 +11,76 @@ body {
   background-color: #fff;
 }
 
+/* body > * { background: rgba(255, 0, 0, 0.3); } 
+body > * > * { background: rgba(255, 255, 0, 0.3); } 
+body > * > * > * { background: rgba(0, 0, 255, 0.3); } 
+body > * > * > * > * { background: rgba(0, 255, 255, 0.3); } */
+
 a {
   text-decoration: none;
 }
 
-.visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
 /* header */
 .main-header {
   background-color: #eee;
+
+  min-height: 545px;
 }
 
 .main-navigation {
   line-height: 30px;
   font-weight: 500;
+  text-transform: uppercase;
+
+  min-height: 135px;
+
+  display: flex;
+}
+
+.main-header-logo {
+  margin-top: 50px;
+  margin-left: 140px;
+  margin-right: 200px;
 }
 
 .site-navigation,
 .user-navigation {
   list-style: none;
+  display: flex;
+
+  margin: 0;
+  margin-top: 75px;
+  padding: 0;
+}
+
+.site-navigation li {
+  padding-right: 45px; 
+}
+
+.site-navigation li:last-child {
+  padding-right: 290px; 
+}
+
+.user-navigation {
+  margin-right: 140px;
 }
 
 .site-navigation a,
@@ -72,9 +113,25 @@ a {
 /* main-content */
 
 /* offers index.html */
+.offers-list {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+}
 
 .offers li {
-  list-style: none
+  list-style: none;
+  margin-top: 80px;
+}
+
+.offers li:first-child {
+  margin-left: 140px;
+}
+
+.offers li:last-child {
+  margin-right: 140px;
 }
 
 .offers h3 {
@@ -92,6 +149,14 @@ a {
   line-height: 18px;
   font-weight: 500;
   color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+
+  display: inline-block;
+
+  width: 160px;
+  min-height: 50px;
 }
 
 .button-web_sites {
