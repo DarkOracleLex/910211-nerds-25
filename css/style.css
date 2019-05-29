@@ -88,10 +88,6 @@ input[type="radio"].visually-hidden {
   padding-right: 290px; 
 }
 
-.user-navigation {
-  margin-right: 140px;
-}
-
 .site-navigation a,
 .user-navigation a {
   color: #000;
@@ -237,24 +233,29 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+
+  margin: 0;
+  margin-top: 20px;
 }
 
 .offers-description {
   color: #283136;
+
+  margin: 0;
+  margin-top: 20px;
 }
 
 .offers-button {
+  display: block;
+  width: 160px;
+  padding: 15px 0;
+  margin-top: 30px; 
+  
   line-height: 18px;
   font-weight: 500;
   color: #fff;
   text-transform: uppercase;
   text-align: center;
-  vertical-align: middle;
-
-  display: inline-block;
-
-  width: 160px;
-  min-height: 50px;
 }
 
 .button-web_sites {
