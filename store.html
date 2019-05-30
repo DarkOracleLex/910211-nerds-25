@@ -15,163 +15,169 @@
         <div class="navigation-container">
             <nav class="main-navigation">
                 <h1 class="visually-hidden">Nerds - дизайн-студия из Краснодара.</h1>
-                <a class="main-header-logo" href="#">
+                <a class="main-header-logo" href="index.html">
                     <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии «Nerds»">
                 </a>
-                <ul class="site-navigation">
-                    <li><a href="index.html">Студия</a></li>
-                    <li><a href="#">Клиенты</a></li>
-                    <li><a href="#" class="current">Магазин</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-                <ul class="user-navigation">
-                    <li class="cart-button"><a href="#">Корзина</a></li>
-                </ul>
+                <div class="menu-container">
+                    <ul class="site-navigation">
+                        <li><a href="#" class="current">Студия</a></li>
+                        <li><a href="#">Клиенты</a></li>
+                        <li><a href="store.html">Магазин</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                    <ul class="user-navigation">
+                        <li class="cart-button"><a href="#">Корзина</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
         <h1 class="store-header">Магазин готовых шаблонов</h1>
     </header>
     <main>
-        <section class="product_filter">
-            <h2 class="visually-hidden">Фильтр товаров</h2>
-            <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-                <fieldset>
-                    <legend class="visually-hidden">Сетка</legend>
-                    <b class="fieldset-title" aria-hidden="true">Сетка</b>
-                    <ul>
-                        <li class="filter-option">
-                            <label class="filter-label">
-                                <input class="filter-input filter-input-radio" type="radio" name="grid-option"
-                                    value="adaptive">
-                                Адаптивная
-                            </label>
+        <div class="filter-catalog-container">
+            <section class="product_filter">
+                <h2 class="visually-hidden">Фильтр товаров</h2>
+                <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                    <fieldset>
+                        <legend class="visually-hidden">Сетка</legend>
+                        <b class="fieldset-title" aria-hidden="true">Сетка</b>
+                        <ul>
+                            <li class="filter-option">
+                                <label class="filter-label">
+                                    <input class="filter-input filter-input-radio" type="radio" name="grid-option"
+                                        value="adaptive">
+                                    Адаптивная
+                                </label>
+                            </li>
+                            <li class="filter-option">
+                                <label class="filter-label">
+                                    <input class="filter-input filter-input-radio" type="radio" name="grid-option"
+                                        value="fixed">
+                                    Фиксированная
+                                </label>
+                            </li>
+                            <li class="filter-option">
+                                <label class="filter-label">
+                                    <input class="filter-input filter-input-radio" type="radio" name="grid-option"
+                                        value="rubber">
+                                    Резиновая
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="visually-hidden">Особенности</legend>
+                        <b class="fieldset-title" aria-hidden="true">Особенности</b>
+                        <ul>
+                            <li>
+                                <label class="filter-label">
+                                    <input class="filter-input filter-input-checkbox" type="checkbox" name="features-option"
+                                        value="slider">
+                                    Слайдер
+                                </label>
+                            </li>
+                            <li>
+                                <label class="filter-label">
+                                    <input class="filter-input filter-input-checkbox" type="checkbox" name="features-option"
+                                        value="advantage block">
+                                    Блок преимуществ
+                                </label>
+                            </li>
+                            <li>
+                                <label class="filter-label">
+                                    <input class="filter-input filter-input-checkbox" type="checkbox" name="features-option"
+                                        value="news">
+                                    Новости
+                                </label>
+                            </li>
+                            <li>
+                                <label class="filter-label">
+                                    <input class="filter-input filter-input-checkbox" type="checkbox" name="features-option"
+                                        value="gallery">
+                                    Галерея
+                                </label>
+                            </li>
+                            <li>
+                                <label class="filter-label">
+                                    <input class="filter-input filter-input-checkbox" type="checkbox" name="features-option"
+                                        value="cart">
+                                    Корзина
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <button type="submit" class="filter-button">Показать</button>
+                </form>
+            </section>
+            <div class="catalog-container">
+                <section class="catalog">
+                    <h2 class="visually-hidden">Наши шаблоны</h2>
+                    <ul class="catalog-list">
+                        <li>
+                            <article class="catalog-item">
+                                <img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон «Седона»">
+                                <div class="catalog-item-hover">
+                                    <h3>Sedona</h3>
+                                    <p>Информационный сайт для туристов</p>
+                                    <a class="catalog-item-hover-button" href="#">9900</a>
+                                </div>
+                            </article>
                         </li>
-                        <li class="filter-option">
-                            <label class="filter-label">
-                                <input class="filter-input filter-input-radio" type="radio" name="grid-option"
-                                    value="fixed">
-                                Фиксированная
-                            </label>
+                        <li>
+                            <article class="catalog-item">
+                                <img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон «Pink»">
+                                <div class="catalog-item-hover">
+                                    <h3>Pink app</h3>
+                                    <p>Продуктовый лендинг приложения для iOS и Android</p>
+                                    <a class="catalog-item-hover-button" href="#">9900</a>
+                                </div>
+                            </article>
                         </li>
-                        <li class="filter-option">
-                            <label class="filter-label">
-                                <input class="filter-input filter-input-radio" type="radio" name="grid-option"
-                                    value="rubber">
-                                Резиновая
-                            </label>
+                        <li>
+                            <article class="catalog-item">
+                                <img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон «Borodinsky»">
+                                <div class="catalog-item-hover">
+                                    <h3>Barbershop</h3>
+                                    <p>Сайт салона красоты. Для мужчин, да.</p>
+                                    <a class="catalog-item-hover-button" href="#">9900</a>
+                                </div>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="catalog-item">
+                                <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон «Mishka»">
+                                <div class="catalog-item-hover">
+                                    <h3>Mishka</h3>
+                                    <p>Интернет-мазазин вязанных игрушек</p>
+                                    <a class="catalog-item-hover-button" href="#">9900</a>
+                                </div>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="catalog-item">
+                                <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон «A+»">
+                                <div class="catalog-item-hover">
+                                    <h3>A plus</h3>
+                                    <p>Лендинг курсов повышения квалификации</p>
+                                    <a class="catalog-item-hover-button" href="#">9900</a>
+                                </div>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="catalog-item">
+                                <img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон «Кваст»">
+                                <div class="catalog-item-hover">
+                                    <h3>Кваст</h3>
+                                    <p>Промо-сайт производителя крафтового кваса</p>
+                                    <a class="catalog-item-hover-button" href="#">9900</a>
+                                </div>
+                            </article>
                         </li>
                     </ul>
-                </fieldset>
-                <fieldset>
-                    <legend class="visually-hidden">Особенности</legend>
-                    <b class="fieldset-title" aria-hidden="true">Особенности</b>
-                    <ul>
-                        <li>
-                            <label class="filter-label">
-                                <input class="filter-input filter-input-checkbox" type="checkbox" name="features-option"
-                                    value="slider">
-                                Слайдер
-                            </label>
-                        </li>
-                        <li>
-                            <label class="filter-label">
-                                <input class="filter-input filter-input-checkbox" type="checkbox" name="features-option"
-                                    value="advantage block">
-                                Блок преимуществ
-                            </label>
-                        </li>
-                        <li>
-                            <label class="filter-label">
-                                <input class="filter-input filter-input-checkbox" type="checkbox" name="features-option"
-                                    value="news">
-                                Новости
-                            </label>
-                        </li>
-                        <li>
-                            <label class="filter-label">
-                                <input class="filter-input filter-input-checkbox" type="checkbox" name="features-option"
-                                    value="gallery">
-                                Галерея
-                            </label>
-                        </li>
-                        <li>
-                            <label class="filter-label">
-                                <input class="filter-input filter-input-checkbox" type="checkbox" name="features-option"
-                                    value="cart">
-                                Корзина
-                            </label>
-                        </li>
-                    </ul>
-                </fieldset>
-                <button type="submit" class="filter-button">Показать</button>
-            </form>
-        </section>
-        <section class="catalog">
-            <h2 class="visually-hidden">Наши шаблоны</h2>
-            <ul class="catalog-list">
-                <li>
-                    <article class="catalog-item">
-                        <img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон «Седона»">
-                        <div class="catalog-item-hover">
-                            <h3>Sedona</h3>
-                            <p>Информационный сайт для туристов</p>
-                            <a class="catalog-item-hover-button" href="#">9900</a>
-                        </div>
-                    </article>
-                </li>
-                <li>
-                    <article class="catalog-item">
-                        <img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон «Pink»">
-                        <div class="catalog-item-hover">
-                            <h3>Pink app</h3>
-                            <p>Продуктовый лендинг приложения для iOS и Android</p>
-                            <a class="catalog-item-hover-button" href="#">9900</a>
-                        </div>
-                    </article>
-                </li>
-                <li>
-                    <article class="catalog-item">
-                        <img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон «Borodinsky»">
-                        <div class="catalog-item-hover">
-                            <h3>Barbershop</h3>
-                            <p>Сайт салона красоты. Для мужчин, да.</p>
-                            <a class="catalog-item-hover-button" href="#">9900</a>
-                        </div>
-                    </article>
-                </li>
-                <li>
-                    <article class="catalog-item">
-                        <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон «Mishka»">
-                        <div class="catalog-item-hover">
-                            <h3>Mishka</h3>
-                            <p>Интернет-мазазин вязанных игрушек</p>
-                            <a class="catalog-item-hover-button" href="#">9900</a>
-                        </div>
-                    </article>
-                </li>
-                <li>
-                    <article class="catalog-item">
-                        <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон «A+»">
-                        <div class="catalog-item-hover">
-                            <h3>A plus</h3>
-                            <p>Лендинг курсов повышения квалификации</p>
-                            <a class="catalog-item-hover-button" href="#">9900</a>
-                        </div>
-                    </article>
-                </li>
-                <li>
-                    <article class="catalog-item">
-                        <img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон «Кваст»">
-                        <div class="catalog-item-hover">
-                            <h3>Кваст</h3>
-                            <p>Промо-сайт производителя крафтового кваса</p>
-                            <a class="catalog-item-hover-button" href="#">9900</a>
-                        </div>
-                    </article>
-                </li>
-            </ul>
-        </section>
-        <section class="modal modal-write-us">
+                </section>
+            </div>
+        </div>
+        <section class="modal modal-write-us visually-hidden">
             <h2>Напишите нам</h2>
             <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
                 <p>
