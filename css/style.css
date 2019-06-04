@@ -93,22 +93,40 @@ input[type="radio"].visually-hidden {
   padding-right: 45px;
 }
 
-
 .site-navigation a,
-.user-navigation a {
+.user-navigation {
   color: #000;
 }
 
 .site-navigation a:hover,
 .site-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
+.user-navigation:hover,
+.user-navigation:focus {
   color: #fb565a;
 }
 
 .site-navigation a:active,
-.user-navigation a:active {
+.user-navigation:active {
   color: #a6a6a6;
+}
+
+.cart-button {
+  position: relative;
+  padding-left: 40px;
+}
+
+.cart-button::before {
+  content: "";
+
+  position: absolute;
+  top: 7px;
+  left: 0;
+
+  width: 15px;
+  height: 15px;
+
+  background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
 }
 
 .site-navigation .current {
@@ -213,13 +231,13 @@ input[type="radio"].visually-hidden {
 
   margin: 0 auto;
   padding: 0 20px;
+  padding-top: 80px;
 
   box-sizing: border-box;
 }
 
 .offers-list {
   margin: 0;
-  margin-top: 80px;
   padding: 0;
 
   display: flex;
@@ -309,6 +327,93 @@ input[type="radio"].visually-hidden {
   background-color: #e5a722;
 }
 
+/* studio-benefits index.html */
+
+.studio-benefits-container {
+  width: 1200px;
+  margin: 0 auto;
+
+  padding: 125px 20px 0px;
+
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.studio-benefits-left-container {
+  width: 660px;
+}
+
+.studio-benefits-right-container {
+  width: 360px;
+}
+
+.studio-benefits-tagline {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+
+  margin: 0;
+  margin-top: 30px;
+}
+
+.studio-benefits-description {
+  margin: 0;
+  margin-top: 35px;
+}
+
+.studio-benefits-list-heading {
+  font-weight: 700;
+  text-transform: uppercase;
+
+  margin: 0;
+}
+
+.studio-benefits-list-heading.left-list {
+  margin-top: 40px;
+}
+
+.studio-benefits-list-heading.right-list {
+  margin-top: 30px;
+
+  text-align: center;
+}
+
+.studio-benefits-list {
+  margin: 0;
+  padding: 0;
+}
+
+.studio-benefits-list li {
+  list-style: none;
+}
+
+.studio-benefits-list.left-list li {
+  margin-top: 25px;
+}
+
+.studio-benefits-list.right-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.studio-benefits-list.right-list li {
+  line-height: 18px;
+
+  width: 120px;
+  margin-top: 50px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.studio-benefits-list.right-list span {
+  font-size: 45px;
+  font-weight: 700;
+
+  margin-bottom: 30px;
+}
+
 /* main store.html */
 
 .filter-catalog-container {
@@ -391,7 +496,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 
   margin: 0;
-  padding-top: 30px; 
+  padding-top: 30px;
 }
 
 .catalog-item-hover p {
