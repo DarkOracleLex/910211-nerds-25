@@ -12,7 +12,7 @@
 
 <body>
     <header class="main-header">
-        <div class="navigation-container">
+        <div class="main-container navigation-container">
             <nav class="main-navigation">
                 <h1 class="visually-hidden">Nerds - дизайн-студия из Краснодара.</h1>
                 <a class="main-header-logo" href="#">
@@ -31,7 +31,7 @@
         </div>
         <section class="main-header-slider">
             <h2 class="visually-hidden">Слайдер о нас</h2>
-            <div class="slider-container">
+            <div class="main-container slider-container">
                 <div class="slider-controls">
                     <i class="active"></i>
                     <i></i>
@@ -60,7 +60,7 @@
     <main class="main-content">
         <section class="offers">
             <h2 class="visually-hidden">Наши предложения</h2>
-            <div class="offers-container">
+            <div class="main-container offers-container">
                 <ul class="offers-list">
                     <li>
                         <img src="img/illustration-1.png" width="300" height="146" alt="Иконка веб-сайта">
@@ -86,7 +86,7 @@
         </section>
         <section class="studio-benefits">
             <h2 class="visually-hidden">Описание преимуществ студии</h2>
-            <div class="studio-benefits-container">
+            <div class="main-container studio-benefits-container">
                 <div class="studio-benefits-left-container">
                     <p class="studio-benefits-tagline">Мы — маленькая, но гордая <br> дизайн-студия из Краснодара.</p>
                     <p class="studio-benefits-description">Исповедуем принципы минимализма и чистоты.
@@ -110,17 +110,19 @@
                 </div>
             </div>
         </section>
-        <div class="company-logos-container">
-            <figure class="company-logos">
-                <img src="img/logo-1.png" width="200" height="70" alt="Логотип html-academy">
-                <img src="img/logo-2.png" width="210" height="90" alt="Логотип барбершоп borodinski">
-                <img src="img/logo-3.png" width="185" height="50" alt="Логотип pink">
-                <img src="img/logo-4.png" width="173" height="84" alt="Логотип mishka">
-            </figure>
+        <div class="main-container company-logos-container">
+            <ul class="company-logos">
+                <li><a href="#"><img src="img/logo-1.png" width="200" height="70" alt="Логотип html-academy"></a></li>
+                <li><a href="#"><img src="img/logo-2.png" width="210" height="90" alt="Логотип барбершоп borodinski"></a></li>
+                <li><a href="#"><img src="img/logo-3.png" width="185" height="50" alt="Логотип pink"></a></li>
+                <li><a href="#"><img src="img/logo-4.png" width="173" height="84" alt="Логотип mishka"></a></li>
+            </ul>
         </div>
-        <div class="map-container">
-            <img src="img/map.png" width="1440" height="416" alt="Адрес: Санкт-Петербург, 
-            ул. Б. Конюшенная, д. 19/8">
+        <div class="google-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1559744175090!5m2!1sru!2sru"
+                width="100%" height="420" frameborder="0" style="border:0" allowfullscreen>
+            </iframe>
         </div>
         <section class="modal modal-write-us visually-hidden">
             <h2>Напишите нам</h2>
@@ -153,7 +155,7 @@
         </section>
     </main>
     <footer class="main-footer">
-        <div class="footer-container">
+        <div class="main-container footer-container">
             <section class="footer-social">
                 <h2 class="visually-hidden">Социальные сети</h2>
                 <ul>
