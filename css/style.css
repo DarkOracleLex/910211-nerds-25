@@ -41,6 +41,10 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+.d-none {
+  display: none;
+}
+
 .main-container {
   width: 1200px;
 
@@ -727,6 +731,22 @@ input[type="radio"].visually-hidden {
 
 /* filters store.html */
 
+.product_filter {
+  width: 260px;
+}
+
+.filter-item {
+  border: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+.filter-item ul {
+  margin: 0;
+  padding: 0;
+}
+
 .product_filter li {
   list-style: none;
 }
@@ -738,10 +758,196 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
+.range-filter {
+  margin-top: 50px;
+}
+
+.range-fieldset {
+  display: block;
+
+  margin-top: 55px;
+
+  letter-spacing: 1px;
+}
+
+.range-controls {
+  position: relative;
+
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  background-color: #f1f1f1;
+
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  -webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 8px 10px;
+  margin-left: 10px;
+
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.max-price {
+  text-align: right;
+}
+
+.radio-fieldset {
+  display: block;
+  margin-top: 55px;
+}
+
 .filter-label {
+  position: relative;
+}
+
+.filter-label span {
   line-height: 20px;
   color: #283136;
 }
+
+.radio-list span {
+  display: block;
+
+  padding-left: 40px;
+  margin: 15px 0;
+}
+
+.radio-list span:first-of-type {
+  margin-top: 20px;
+}
+
+.filter-input-radio+span::before {
+  content: "";
+
+  position: absolute;
+  left: 0px;
+  top: -2px;
+  display: block;
+  width: 25px;
+  height: 25px;
+
+  background: url("../img/radio-off.svg") no-repeat;
+  opacity: 0.4;
+}
+
+.filter-input-radio:checked+span::after {
+  content: "";
+
+  position: absolute;
+  left: 0px;
+  top: -2px;
+  display: block;
+  width: 25px;
+  height: 25px;
+
+  background: url("../img/radio-on.svg") no-repeat;
+}
+
+.checkbox-fieldset {
+  margin-top: 30px;
+}
+
+.checkbox-list span {
+  display: block;
+
+  padding-left: 40px;
+  margin: 20px 0;
+}
+
+.checkbox-list span:first-of-type {
+  margin-top: 15px;
+}
+
+.filter-input-checkbox+span::before {
+  content: "";
+
+  position: absolute;
+  left: 0px;
+  top: -2px;
+  display: block;
+  width: 27px;
+  height: 23px;
+
+  background: url("../img/checkbox-off.svg") no-repeat;
+  opacity: 0.4;
+}
+
+.filter-input-checkbox:checked+span::after {
+  content: "";
+
+  position: absolute;
+  left: 0px;
+  top: -2px;
+  display: block;
+  width: 27px;
+  height: 23px;
+
+  background: url("../img/checkbox-on.svg") no-repeat;
+}
+
 
 .filter-button {
   line-height: 18px;
@@ -909,42 +1115,49 @@ input[type="radio"].visually-hidden {
 
   width: 80px;
   height: 80px;
+
+  background-color: #e1e1e1;
+  border-radius: 50%;
 }
 
-.footer-social-button .vk {
+.footer-social li:hover,
+.footer-social li:focus {
+  background-color: #e74246;
+}
+
+.footer-social li:active {
+  background-color: #d7373b;
+  -webkit-box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+.footer-social-button {
   display: block;
 
   width: 80px;
   height: 80px;
-
-  background: #e1e1e1 url("../img/vk-icon.svg") no-repeat;
-  background-position: 50%;
-
-  border-radius: 50%;
 }
 
-.footer-social-button .fb {
-  display: block;
-
-  width: 80px;
-  height: 80px;
-
-  background: #e1e1e1 url("../img/fb-icon.svg") no-repeat;
+.footer-social-button.vk {
+  background-image: url("../img/vk-icon.svg");
+  background-repeat: no-repeat;
   background-position: 50%;
-
-  border-radius: 50%;
 }
 
-.footer-social-button .ig {
-  display: block;
-
-  width: 80px;
-  height: 80px;
-
-  background: #e1e1e1 url("../img/insta-icon.svg") no-repeat;
+.footer-social-button.fb {
+  background-image: url("../img/fb-icon.svg");
+  background-repeat: no-repeat;
   background-position: 50%;
+}
 
-  border-radius: 50%;
+.footer-social-button.ig {
+  background-image: url("../img/insta-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.footer-social-button:active {
+  opacity: 0.3;
 }
 
 .footer-discount {

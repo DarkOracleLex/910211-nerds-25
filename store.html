@@ -35,70 +35,87 @@
             <section class="product_filter">
                 <h2 class="visually-hidden">Фильтр товаров</h2>
                 <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-                    <fieldset>
-                        <legend class="visually-hidden">Сетка</legend>
-                        <b class="fieldset-title" aria-hidden="true">Сетка</b>
-                        <ul>
+                    <fieldset class="filter-item">
+                        <legend class="visually-hidden">Стоимость:</legend>
+                        <b class="fieldset-title range-fieldset" aria-hidden="true">Стоимость:</b>
+                        <div class="range-filter">
+                            <div class="range-controls">
+                                <div class="scale">
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="toggle toggle-min"></div>
+                                <div class="toggle toggle-max"></div>
+                            </div>
+                            <div class="price-controls">
+                                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="filter-item radio-fieldset">
+                        <legend class="visually-hidden">Сетка:</legend>
+                        <b class="fieldset-title" aria-hidden="true">Сетка:</b>
+                        <ul class="radio-list">
                             <li class="filter-option">
                                 <label class="filter-label">
-                                    <input class="filter-input filter-input-radio" type="radio" name="grid-option"
-                                        value="adaptive">
-                                    Адаптивная
+                                    <input class="d-none filter-input filter-input-radio" type="radio"
+                                        name="grid-option" value="adaptive" checked>
+                                    <span>Адаптивная</span>
                                 </label>
                             </li>
                             <li class="filter-option">
                                 <label class="filter-label">
-                                    <input class="filter-input filter-input-radio" type="radio" name="grid-option"
-                                        value="fixed">
-                                    Фиксированная
+                                    <input class="d-none filter-input filter-input-radio" type="radio"
+                                        name="grid-option" value="fixed">
+                                    <span>Фиксированная</span>
                                 </label>
                             </li>
                             <li class="filter-option">
                                 <label class="filter-label">
-                                    <input class="filter-input filter-input-radio" type="radio" name="grid-option"
-                                        value="rubber">
-                                    Резиновая
+                                    <input class="d-none filter-input filter-input-radio" type="radio"
+                                        name="grid-option" value="rubber">
+                                    <span>Резиновая</span>
                                 </label>
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset>
-                        <legend class="visually-hidden">Особенности</legend>
-                        <b class="fieldset-title" aria-hidden="true">Особенности</b>
-                        <ul>
+                    <fieldset class="filter-item checkbox-fieldset">
+                        <legend class="visually-hidden">Особенности:</legend>
+                        <b class="fieldset-title" aria-hidden="true">Особенности:</b>
+                        <ul class="checkbox-list">
                             <li>
                                 <label class="filter-label">
-                                    <input class="filter-input filter-input-checkbox" type="checkbox"
-                                        name="features-option" value="slider">
-                                    Слайдер
+                                    <input class="d-none filter-input filter-input-checkbox" type="checkbox"
+                                        name="features-option" value="slider" checked>
+                                    <span>Слайдер</span>
                                 </label>
                             </li>
                             <li>
                                 <label class="filter-label">
-                                    <input class="filter-input filter-input-checkbox" type="checkbox"
+                                    <input class="d-none filter-input filter-input-checkbox" type="checkbox"
                                         name="features-option" value="advantage block">
-                                    Блок преимуществ
+                                    <span>Блок преимуществ</span>
                                 </label>
                             </li>
                             <li>
                                 <label class="filter-label">
-                                    <input class="filter-input filter-input-checkbox" type="checkbox"
-                                        name="features-option" value="news">
-                                    Новости
+                                    <input class="d-none filter-input filter-input-checkbox" type="checkbox"
+                                        name="features-option" value="news" checked>
+                                    <span>Новости</span>
                                 </label>
                             </li>
                             <li>
                                 <label class="filter-label">
-                                    <input class="filter-input filter-input-checkbox" type="checkbox"
+                                    <input class="d-none filter-input filter-input-checkbox" type="checkbox"
                                         name="features-option" value="gallery">
-                                    Галерея
+                                    <span>Галерея</span>
                                 </label>
                             </li>
                             <li>
                                 <label class="filter-label">
-                                    <input class="filter-input filter-input-checkbox" type="checkbox"
+                                    <input class="d-none filter-input filter-input-checkbox" type="checkbox"
                                         name="features-option" value="cart">
-                                    Корзина
+                                    <span>Корзина</span>
                                 </label>
                             </li>
                         </ul>
@@ -222,10 +239,10 @@
             <section class="footer-social">
                 <h2 class="visually-hidden">Социальные сети</h2>
                 <ul>
-                    <li class="footer-social-button"><a class="vk" href="#" aria-label="Ссылка на наш вконтакте"></a>
+                    <li><a class="footer-social-button vk" href="#" aria-label="Ссылка на наш вконтакте"></a>
                     </li>
-                    <li class="footer-social-button"><a class="fb" href="#" aria-label="Ссылка на наш фейсбук"></a></li>
-                    <li class="footer-social-button"><a class="ig" href="#" aria-label="Ссылка на наш инстаграм"></a>
+                    <li><a class="footer-social-button fb" href="#" aria-label="Ссылка на наш фейсбук"></a></li>
+                    <li><a class="footer-social-button ig" href="#" aria-label="Ссылка на наш инстаграм"></a>
                     </li>
                 </ul>
             </section>
