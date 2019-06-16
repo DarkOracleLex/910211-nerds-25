@@ -133,7 +133,7 @@
                                     alt="Шаблон «Седона»">
                                 <div class="catalog-item-hover">
                                     <h3>Sedona</h3>
-                                    <p>Информационный сайт <br> для туристов</p>
+                                    <p>Информационный сайт для туристов</p>
                                     <a class="catalog-item-hover-button" href="#">9900</a>
                                 </div>
                             </article>
@@ -143,7 +143,7 @@
                                 <img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон «Pink»">
                                 <div class="catalog-item-hover">
                                     <h3>Pink app</h3>
-                                    <p>Продуктовый лендинг <br> приложения для iOS и Android</p>
+                                    <p>Продуктовый лендинг приложения для iOS и Android</p>
                                     <a class="catalog-item-hover-button" href="#">9900</a>
                                 </div>
                             </article>
@@ -153,7 +153,7 @@
                                 <img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон «Borodinsky»">
                                 <div class="catalog-item-hover">
                                     <h3>Barbershop</h3>
-                                    <p>Сайт салона красоты. <br> Для мужчин, да.</p>
+                                    <p>Сайт салона красоты. Для мужчин, да.</p>
                                     <a class="catalog-item-hover-button" href="#">9900</a>
                                 </div>
                             </article>
@@ -163,7 +163,7 @@
                                 <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон «Mishka»">
                                 <div class="catalog-item-hover">
                                     <h3>Mishka</h3>
-                                    <p>Интернет-мазазин <br> вязанных игрушек</p>
+                                    <p>Интернет-мазазин вязанных игрушек</p>
                                     <a class="catalog-item-hover-button" href="#">9900</a>
                                 </div>
                             </article>
@@ -173,7 +173,7 @@
                                 <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон «A+»">
                                 <div class="catalog-item-hover">
                                     <h3>A plus</h3>
-                                    <p>Лендинг курсов повышения <br> квалификации</p>
+                                    <p>Лендинг курсов повышения квалификации</p>
                                     <a class="catalog-item-hover-button" href="#">9900</a>
                                 </div>
                             </article>
@@ -183,7 +183,7 @@
                                 <img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон «Кваст»">
                                 <div class="catalog-item-hover">
                                     <h3>Кваст</h3>
-                                    <p>Промо-сайт производителя <br> крафтового кваса</p>
+                                    <p>Промо-сайт производителя крафтового кваса</p>
                                     <a class="catalog-item-hover-button" href="#">9900</a>
                                 </div>
                             </article>
@@ -199,7 +199,7 @@
             </iframe>
             <address class="adress-block">
                 <p class="map-title">Nёrds design studio</p>
-                <p>191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8</p>
+                <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                 <p>тел. +7 (812) 275-75-75</p>
                 <button class="adress-block-button">Напишите нам</button>
             </address>
@@ -227,32 +227,63 @@
     <section class="modal modal-write-us">
         <h2>Напишите нам</h2>
         <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-            <p>
-                <label class="write-us-label">
-                    Ваше имя:
-                    <input class="user-name" type="text" name="name" placeholder="Имя Фамилия">
-                </label>
-            </p>
-            <p>
-                <label class="write-us-label">
-                    Ваш e-mail:
-                    <input class="user-email" type="text" name="email" placeholder="email@example.com">
-                </label>
-            </p>
-            <p>
-                <label class="write-us-label">
-                    Текст письма:
-                    <textarea class="user-letter" name="letter" cols="30" rows="10">В свободной форме</textarea>
-                </label>
-            </p>
-            <button class="write-us-button" type="submit">
-                Отправить
-            </button>
+            <div class="modal-input-container">
+                <p>
+                    <label class="write-us-label">
+                        Ваше имя:
+                        <input class="user-name" type="text" name="name" placeholder="Имя Фамилия" required>
+                    </label>
+                </p>
+                <p>
+                    <label class="write-us-label">
+                        Ваш e-mail:
+                        <input class="user-email" type="text" name="email" placeholder="email@example.com" required>
+                    </label>
+                </p>
+                <p>
+                    <label class="write-us-label text-area-label">
+                        Текст письма:
+                        <textarea class="user-letter" name="letter">В свободной форме</textarea>
+                    </label>
+                </p>
+                <button class="write-us-button" type="submit">
+                    Отправить
+                </button>
+            </div>
         </form>
         <button class="modal-close-button" type="button">
             Закрыть
         </button>
     </section>
+    <script>
+        var link = document.querySelector('.adress-block-button');
+
+        var popup = document.querySelector('.modal-write-us');
+        var close = popup.querySelector('.modal-close-button');
+
+        var form = popup.querySelector("form");
+        var focusOnName = popup.querySelector("[name=name]");
+
+        link.addEventListener("click", function (evt) {
+            evt.preventDefault();
+            popup.classList.add("modal-show");
+            focusOnName.focus();
+        });
+
+        close.addEventListener("click", function (evt) {
+            evt.preventDefault();
+            popup.classList.remove("modal-show");
+        });
+
+        window.addEventListener("keydown", function (evt) {
+            if (evt.keyCode === 27) {
+                evt.preventDefault();
+                if (popup.classList.contains("modal-show")) {
+                    popup.classList.remove("modal-show");
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
