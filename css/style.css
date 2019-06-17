@@ -962,6 +962,24 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   font-weight: 500;
   text-transform: uppercase;
+
+  padding: 15px 0;
+  margin-top: 25px;
+
+  width: 260px;
+  
+  background-color: #eee;
+  border: none;
+}
+
+.filter-button:hover {
+  background-color: #dfdfdf;
+}
+
+.filter-button:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #d5d5d5;
+  box-shadow:0px 3px 0px 0px rgba(0,1,1,0.1) inset;
 }
 
 /* catalog store.html */
@@ -976,7 +994,7 @@ input[type="radio"].visually-hidden {
   align-items: center;
 
   margin-top: 55px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .catalog-sorting {
@@ -1060,7 +1078,7 @@ input[type="radio"].visually-hidden {
 .catalog-item {
   position: relative;
   padding-top: 40px;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 
 .catalog-item::before {
