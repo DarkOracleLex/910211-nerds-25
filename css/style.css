@@ -970,6 +970,73 @@ input[type="radio"].visually-hidden {
   width: 760px;
 }
 
+.catalog-sorting-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 55px;
+  margin-bottom: 60px;
+}
+
+.catalog-sorting {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  margin: 0;
+}
+
+.catalog-sorting-span-container {
+  position: relative;
+}
+
+.catalog-sorting-span {
+  font-size: 14px;
+  text-transform: uppercase;
+
+  margin-right: 20px;
+
+  opacity: 0.3;
+}
+
+.catalog-sorting-span:nth-of-type(3) {
+  margin-right: 45px;
+}
+
+.catalog-sorting-span:nth-of-type(4) {
+  margin-right: 15px;
+}
+
+.catalog-sorting-span:last-of-type {
+  margin-right: 0px;
+}
+
+.catalog-sorting-span:hover {
+  opacity: 0.6;
+}
+
+.catalog-sorting-span:active {
+  opacity: 1;
+}
+
+.catalog-sorting-span.triangle {
+  display: inline-block;
+  width: 11px;
+  height: 10px;
+
+  vertical-align: middle;
+}
+
+.catalog-sorting-span.triangle-1 {
+  background-image: url("../img/icon-down-dir.svg");
+}
+
+.catalog-sorting-span.triangle-2 {
+  background-image: url("../img/icon-up-dir.svg");
+}
+
 .catalog-list {
   display: -webkit-box;
   display: -ms-flexbox;
