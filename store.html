@@ -21,7 +21,7 @@
                     <ul class="site-navigation">
                         <li><a href="index.html">Студия</a></li>
                         <li><a href="#">Клиенты</a></li>
-                        <li><a href="#" class="current">Магазин</a></li>
+                        <li><a class="current">Магазин</a></li>
                         <li><a href="#">Контакты</a></li>
                     </ul>
                     <a class="user-navigation cart-button" href="#">Корзина</a>
@@ -32,7 +32,7 @@
     </header>
     <main>
         <div class="main-container filter-catalog-container">
-            <section class="product_filter">
+            <section class="product-filter">
                 <h2 class="visually-hidden">Фильтр товаров</h2>
                 <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                     <fieldset class="filter-item">
@@ -143,8 +143,8 @@
                                     alt="Шаблон «Седона»">
                                 <div class="catalog-item-hover">
                                     <h3>Sedona</h3>
-                                    <p>Информационный сайт для туристов</p>
-                                    <a class="catalog-item-hover-button" href="#">9900</a>
+                                    <p class="catalog-item-hover-description">Информационный сайт для туристов</p>
+                                    <a class="catalog-item-hover-button" href="#">9900 руб.</a>
                                 </div>
                             </article>
                         </li>
@@ -153,8 +153,8 @@
                                 <img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон «Pink»">
                                 <div class="catalog-item-hover">
                                     <h3>Pink app</h3>
-                                    <p>Продуктовый лендинг приложения для iOS и Android</p>
-                                    <a class="catalog-item-hover-button" href="#">9900</a>
+                                    <p class="catalog-item-hover-description">Продуктовый лендинг приложения для iOS и Android</p>
+                                    <a class="catalog-item-hover-button" href="#">9900 руб.</a>
                                 </div>
                             </article>
                         </li>
@@ -163,8 +163,8 @@
                                 <img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон «Borodinsky»">
                                 <div class="catalog-item-hover">
                                     <h3>Barbershop</h3>
-                                    <p>Сайт салона красоты. Для мужчин, да.</p>
-                                    <a class="catalog-item-hover-button" href="#">9900</a>
+                                    <p class="catalog-item-hover-description">Сайт салона красоты. Для мужчин, да.</p>
+                                    <a class="catalog-item-hover-button" href="#">9900 руб.</a>
                                 </div>
                             </article>
                         </li>
@@ -173,8 +173,8 @@
                                 <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон «Mishka»">
                                 <div class="catalog-item-hover">
                                     <h3>Mishka</h3>
-                                    <p>Интернет-мазазин вязанных игрушек</p>
-                                    <a class="catalog-item-hover-button" href="#">9900</a>
+                                    <p class="catalog-item-hover-description">Интернет-мазазин вязанных игрушек</p>
+                                    <a class="catalog-item-hover-button" href="#">9900 руб.</a>
                                 </div>
                             </article>
                         </li>
@@ -183,8 +183,8 @@
                                 <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон «A+»">
                                 <div class="catalog-item-hover">
                                     <h3>A plus</h3>
-                                    <p>Лендинг курсов повышения квалификации</p>
-                                    <a class="catalog-item-hover-button" href="#">9900</a>
+                                    <p class="catalog-item-hover-description">Лендинг курсов повышения квалификации</p>
+                                    <a class="catalog-item-hover-button" href="#">9900 руб.</a>
                                 </div>
                             </article>
                         </li>
@@ -193,16 +193,22 @@
                                 <img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон «Кваст»">
                                 <div class="catalog-item-hover">
                                     <h3>Кваст</h3>
-                                    <p>Промо-сайт производителя крафтового кваса</p>
-                                    <a class="catalog-item-hover-button" href="#">9900</a>
+                                    <p class="catalog-item-hover-description">Промо-сайт производителя крафтового кваса</p>
+                                    <a class="catalog-item-hover-button" href="#">9900 руб.</a>
                                 </div>
                             </article>
                         </li>
                     </ul>
+                    <div class="catalog-page-switch-container">
+                        <button class="catalog-page-switch-button current">1</button>
+                        <button class="catalog-page-switch-button">2</button>
+                        <button class="catalog-page-switch-button">3</button>
+                        <button class="catalog-page-switch-button">Следующая</button>
+                    </div>
                 </section>
             </div>
         </div>
-        <div class="google-map">
+        <div class="google-map store">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1559744175090!5m2!1sru!2sru"
                 allowfullscreen>
