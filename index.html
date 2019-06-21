@@ -8,6 +8,7 @@
         rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script async src="js/script.js"></script>
 </head>
 
 <body>
@@ -115,7 +116,8 @@
         </section>
         <div class="main-container company-logos-container">
             <ul class="company-logos">
-                <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" width="200" height="70" alt="Логотип html-academy"></a></li>
+                <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" width="200" height="70"
+                            alt="Логотип html-academy"></a></li>
                 <li><a href="#"><img src="img/logo-2.png" width="210" height="90"
                             alt="Логотип барбершоп borodinski"></a></li>
                 <li><a href="#"><img src="img/logo-3.png" width="185" height="50" alt="Логотип pink"></a></li>
@@ -185,35 +187,6 @@
             Закрыть
         </button>
     </section>
-    <script>
-        var link = document.querySelector('.adress-block-button');
-
-        var popup = document.querySelector('.modal-write-us');
-        var close = popup.querySelector('.modal-close-button');
-
-        var form = popup.querySelector("form");
-        var focusOnName = popup.querySelector("[name=name]");
-
-        link.addEventListener("click", function (evt) {
-            evt.preventDefault();
-            popup.classList.add("modal-show");
-            focusOnName.focus();
-        });
-
-        close.addEventListener("click", function (evt) {
-            evt.preventDefault();
-            popup.classList.remove("modal-show");
-        });
-
-        window.addEventListener("keydown", function (evt) {
-            if (evt.keyCode === 27) {
-                evt.preventDefault();
-                if (popup.classList.contains("modal-show")) {
-                    popup.classList.remove("modal-show");
-                }
-            }
-        });
-    </script>
 </body>
 
 </html>
