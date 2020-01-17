@@ -1,6 +1,6 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Алексей Кузнецов](https://up.htmlacademy.ru/htmlcss/25/user/910211).
+* Студент: [Алексей Кузнецов](https://htmlacademy.ru/profile/darkoracle).
 * Наставник: [Ярослав Шевцов](https://htmlacademy.ru/profile/redx).
 
 Мой первый проект, обычная вёрстка, не адаптивная.
